@@ -30,7 +30,7 @@ def recommend_anime(user_titles, top_k=5):
             selected_vectors.append(match.iloc[0]['vector'])
 
     if not selected_vectors:
-        return ["No matches found. Check your input?"]
+        return ["No matches found. Check your input"]
 
     user_vector = np.mean(selected_vectors, axis=0)
 
